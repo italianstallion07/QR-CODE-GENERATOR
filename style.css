@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background:linear-gradient(to bottom right,black, rgb(70,70,70),black);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCard{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: start;
+    height:400px;
+    width: 300px;   
+    background-color: rgba(0,0,0,0.4);
+    border-radius:20px;
+    position: relative;
+    box-shadow: 0px 0px 10px 10px rgb(90,90,90);
+    transition: background-color 1s, box-shadow 1s;
+}
+
+.mainCard:hover{
+    box-shadow:0px 0px 50px 20px rgb(90,90,90);
+    background-color: rgba(0,0,0,0.3);
+}
+
+.inputField{
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin:20px 10px
+}
+
+input{
+    height:50px;
+    width:250px;
+    border-radius:20px;
+    border:none;
+    background-color: rgb(70,70,70);
+    padding:0px 20px;
+    font-size: 20px;
+    transition:background-color 0.5s;
+    color:white;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.642);
+    font-size: 20px;
+    transition: color 0.5s;
+}
+
+input:hover{
+    background-color: rgb(80,80,80);
+}
+
+input:hover::placeholder{
+    color:rgba(255, 255, 255, 1)
+}
+
+button{
+    margin-top:10px;
+    border:none;
+    height: 40px;
+    border-radius:20px;
+    color: rgba(255, 255, 255, 0.642);
+    background-color: rgb(20,20,20);
+    cursor:pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+button:hover{
+    background-color: rgb(30,30,30);
+    color:rgba(255, 255, 255, 1)
+}
+
+img{
+    margin-top:25px
+}
